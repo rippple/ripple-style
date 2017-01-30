@@ -1,0 +1,107 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Open Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	color: blue;
+}
+/*---------------
+  -- Fonts
+  ---------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*---------------
+  -- Base Styles
+  ---------------*/
+
+#wrapper{
+	max-width: 1024px;
+	margin: 5em auto;
+	padding: 0 3em;  
+}
+.page-header{
+	.logo{
+		font-size: 1.5rem;
+	}
+}
+.topics{
+	li{
+		
+		margin-top: 1em;
+		border-top: solid 1px #eee;
+		padding-top: 1em;
+		overflow: hidden;
+		.data{
+			float: left;
+			time{
+				font-size: 0.7rem;
+				display: block;
+				margin: 0.5em 0;
+				text-transform: uppercase;
+				color: #666;
+			}
+			.heading{
+				font-size: 2.3em;
+			}
+		}
+		.counter{
+			float: right;
+			color: black;
+			text-align: center;
+			width: 100px;
+			.number{
+				font-size: 2.3em;
+			}
+			.label{
+				font-size: 0.7rem;
+				display: block;
+				margin: 0.5em 0;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
